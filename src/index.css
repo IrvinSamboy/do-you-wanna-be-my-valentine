@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+.bgflower {
+    background-image: url('/public/bgflowe.gif');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 200px;
+    background-blend-mode: multiply; /* Prueba también con overlay o soft-light */
+}
