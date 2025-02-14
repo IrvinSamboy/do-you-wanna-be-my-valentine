@@ -29,7 +29,7 @@ export default function App() {
           !yes? 
           'Do you wanna be my valentine?'
           :
-          ':)))))))))))))))))))))))))))'
+          ':)))))))))))))))))))'
         }
       </h2>
       <img src={gojo} className={`size-70 transition-all duration-1000 ${!yes? 'opacity-100 relative' : 'opacity-0 absolute'}`} alt="" />
@@ -44,6 +44,7 @@ export default function App() {
           animate={{ x: randomPosition.x, y: randomPosition.y }}
           transition={{ type: "spring", stiffness: 100, damping: 10 }}
           onMouseEnter={moveButton}
+          onTouchStart={moveButton}
         >
           <button className="px-7 py-3 bg-gray-500 text-white rounded-full cursor-pointer">
             No
